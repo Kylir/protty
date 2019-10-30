@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Track!</title>
+    <meta name="description" content="Track">
+    <meta name="author" content="Aurelie et Jason">
+
+    <link type="text/css" href="https://cdn.jsdelivr.net/npm/litemol@2.4.2/dist/css/LiteMol-plugin.min.css" rel="stylesheet"></link>
+    
+    <script src="https://cdn.jsdelivr.net/npm/litemol@2.4.2/dist/js/LiteMol-plugin.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@5.9.2/dist/d3.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/protvista-uniprot@latest/dist/protvista-uniprot.js" defer></script>
+
+    <script src="./config.js"></script>
+
+</head>
+
+<body>
+
+    <script lang="javascript">
+        window.onload = function () {
+            var obj = document.querySelector("#uniprot");
+            obj.config = customConfig;
+        }
+    </script>
+
+    <protvista-uniprot id="uniprot" accession="P35222" >
+
+</body>
+
+</html>
